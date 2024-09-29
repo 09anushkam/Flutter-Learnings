@@ -103,7 +103,40 @@ void main() {
   // if cases are empty put break - 1:35:30
   // switch case also allows relational operators now
 
-  // Loops
-  
+  // Loops is also similar to c
 
+  // functions
+  // print(printName());
+  
+  // print(printNameAndAge().$2); // age
+  // var (age,name)=printNameAndAge();
+  // print(age); // age
+  // print(name); // name
+  
+  // String name='anu';
+  // argumentSequencingNeeded(name, 20, "Hello");
+  // noArgumentSequencingNeeded(name: name, greeting: "Hello"); // if age is not passed it will be null by default
+
+  // U can have named and positional arguments together
+  // also u can't use positional aguments after named arguments
+  // for more details watch video
+
+}
+
+String printName(){
+  return 'Anushka';
+}
+
+(int,String) printNameAndAge(){
+  return (20,'Anushka');
+}
+
+// positional arguments
+void argumentSequencingNeeded(String name,int age,String greeting){
+print(name);
+}
+
+// named arguments
+void noArgumentSequencingNeeded({required String name,required int age, required String greeting}){
+print(name);
 }
